@@ -4,6 +4,11 @@ class User < ActiveRecord::Base
   validates :password, length: { minimum: 8 }
   validate :require_password_confirmation
 
+  def display_name
+      name.presence || username
+  end
+
+
   private
     def require_password_confirmation
       if password.present? && password != password_confirmation
