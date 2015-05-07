@@ -35,6 +35,9 @@ en:
       update:
         success: "Saved!"
         failure: "There was a problem saving your changes."
+      destroy:
+        success: "NOTE Deleted!"
+        failure: "There was a problem deleting your note"
   session:
     flash:
       create:
